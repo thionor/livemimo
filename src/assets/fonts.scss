@@ -1,17 +1,17 @@
 @font-face {
     font-family: 'Lora';
     font-weight: normal;
-    src: url('./fonts/Lora-Regular.ttf');
+    src: url('@/assets/fonts/Lora-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Lora';
     font-weight: 500;
-    src: url('./fonts/Lora-Medium.ttf');
+    src: url('@/assets/fonts/Lora-Medium.ttf');
 }
 
 @font-face {
     font-family: 'Lora';
     font-weight: 700;
-    src: url('./fonts/Lora-Bold.ttf');
+    src: url('@/assets/fonts/Lora-Bold.ttf');
 }

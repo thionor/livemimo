@@ -1,10 +1,11 @@
-@import './base.scss';
-@import './variables.scss';
-@import './fonts.scss';
+@import '@/assets/base.scss';
+@import '@/assets/fonts.scss';
+@import '@/assets/variables.scss';
+@import '@/assets/mixins.scss';
 
 body {
     font-family: $font-family;
     font-size: $font-size;
     background-color: $purple;
-    -webkit-font-smoothing: auto
+    -webkit-font-smoothing: auto;
 }
