@@ -1,3 +1,6 @@
+import feather from 'feather-icons';
+feather.replace();
+
 import { createApp } from 'vue'
 import App from './App.vue'
 

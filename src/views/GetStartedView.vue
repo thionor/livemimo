@@ -1,16 +1,16 @@
 <template>
   <div class="view-getstarted">
-    <div class="view-getstarted__container">
+    <div class="view-getstarted__container main-container">
 		<div class="view-getstarted__image">
 			<img src="@/assets/images/woman.png"/>
 		</div>
 		<div class="view-getstarted__wrapper">
 			<h1 class="view-getstarted__title">
-			Descubra um mundo de <b>Compras</b> Exclusivas!
+			Descubra um <br> mundo de<br><b> Compras</b> Exclusivas!
 			</h1>
-			<router-link to="#">
+			<router-link class="view-getstarted__button" to="/login">
 			Descobrir agora
-			<i class="icon icon-chevron-right"></i>
+			<i data-feather="eye"></i>
 			</router-link>
 		</div>
     </div>
@@ -18,7 +18,6 @@
 </template>
 
 <script>
-
 export default {
 	name: 'HomeView',
 	components: {
@@ -33,8 +32,10 @@ export default {
 		&__container {
 			height: 100%;
 			display: flex;
+			display: flex;
 			justify-content: flex-end;
-			align-items: center;
+			flex-direction: column;
+			padding-bottom: rem(80);
 		}
 
 		&__image {
@@ -49,16 +50,26 @@ export default {
 		}
 
 		&__wrapper {
+			
 		}
 
 		&__title {
-			font-size: rem(34);
+			font-size: rem(30);
 			font-weight: 700;
+			color: $white;
 
 			b {
 				color: $yellow;
+				font-weight: 700;
 			}
 		}
+
+		&__button {
+			@include button;
+			margin-top: 2rem;
+			font-size: rem(24);
+		}
+
 	}
   
 </style>

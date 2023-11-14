@@ -5,3 +5,17 @@
 @function rem($pxValue) {
     @return #{stripUnit($pxValue) / stripUnit(16)}rem;
 }
+
+@mixin button {
+    display: block;
+    background-color: $green;
+    padding: rem(16);
+    color: $white;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: rem(32);
+
+    &:after {
+        content: '';
+    }
+}
